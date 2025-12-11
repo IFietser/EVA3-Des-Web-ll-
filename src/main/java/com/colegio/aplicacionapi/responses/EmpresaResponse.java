@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class EmpresaResponse {
+
     private String id;
     private String nombre;
     private String direccion;   
