@@ -1,9 +1,7 @@
 package com.colegio.aplicacionapi.models;
 
 import jakarta.persistence.Id;
-
 import java.util.List;
-
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
