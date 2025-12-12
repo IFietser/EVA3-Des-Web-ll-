@@ -27,7 +27,7 @@ public class EmpresaService {
         return empresaRepository.findById(id).orElse(null);
     }
 //Actualizar Empresa
- public Empresa actualizarEmpresa(String id, Empresa empresaActualizada) {
+    public Empresa actualizarEmpresa(String id, Empresa empresaActualizada) {
         Empresa existente = obtenerPorId(id);
         if (existente == null) {
             return null;
@@ -35,8 +35,7 @@ public class EmpresaService {
         existente.setNombre(empresaActualizada.getNombre());
         existente.setDireccion(empresaActualizada.getDireccion());
         existente.setTelefono(empresaActualizada.getTelefono());
-        existente.setJefesDirecto(empresaActualizada.getJefesDirecto());
-        existente.setPractica(empresaActualizada.getPractica());
+
 
         return empresaRepository.save(existente);
     }
@@ -60,7 +59,7 @@ public Empresa agregarPractica(String empresaId, Practica practica) {
         if (empresa == null) {
             return null;
         }
-        empresa.getPractica().add(practica);
+        empresa.getPracticas().add(practica);
         return empresaRepository.save(empresa);
     }
 
