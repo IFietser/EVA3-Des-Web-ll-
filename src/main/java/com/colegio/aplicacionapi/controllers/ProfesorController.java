@@ -13,7 +13,7 @@ import com.colegio.aplicacionapi.requests.JefeDirectoRequest;
 import com.colegio.aplicacionapi.responses.EmpresaResponse;
 import com.colegio.aplicacionapi.responses.GenericResponse;
 import com.colegio.aplicacionapi.services.EmpresaService;
-
+//Controlador para que los profesores gestionen las empresas, jefes directos y prácticas
 @RestController
 @RequestMapping("/api/profesores/empresas")
 public class ProfesorController {
